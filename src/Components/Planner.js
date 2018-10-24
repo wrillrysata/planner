@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-//import "../App.css";
 import Header from "./Header";
 import Action from "./Action";
 import Options from "./Options";
 import Option from "./Option";
 import AddOption from "./AddOption";
 import OptionModal from "./OptionModal";
+import Footer from "./Footer";
 
 class Planner extends Component {
   state = {
@@ -85,6 +85,7 @@ class Planner extends Component {
           selectedOption={this.state.selectedOption}
           handleCloseModal={this.handleCloseModal}
         />
+   <Footer />
       </div>
     );
   }
