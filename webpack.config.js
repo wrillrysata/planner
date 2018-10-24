@@ -53,6 +53,6 @@ module.exports = {
   devtool:'cheap-module-eval-source-map',
   devServer: {
     contentBase: '/public',
-    port: 5000
+    port: process.env.PORT || '5000'
   }
 };
