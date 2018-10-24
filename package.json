@@ -52,8 +52,8 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "build": "webpack-dev-server --history-api-fallback --inline --progress",
-    "start": "webpack-dev-server  --open"
+    "start": "webpack-dev-server --history-api-fallback --inline --progress",
+    "dev": "webpack-dev-server  --open"
   },
   "jest": {
     "collectCoverageFrom": [
