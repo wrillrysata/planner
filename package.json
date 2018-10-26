@@ -56,6 +56,9 @@
     "start": "webpack-dev-server --history-api-fallback --inline --progress",
     "dev": "webpack-dev-server  --open"
   },
+  "engines": {
+    "node": "7.10.1"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
