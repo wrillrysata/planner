@@ -5,7 +5,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: path.join(__dirname, '/src/index.js'),
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -53,6 +53,6 @@ module.exports = {
   devtool:'cheap-module-eval-source-map',
   devServer: {
     contentBase: '/public',
-    port: 5000
+    port: process.env.PORT || 80
   }
 };
