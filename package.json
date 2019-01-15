@@ -58,9 +58,9 @@
   "scripts": {
     "start": "serve -s build",
     "dev": "webpack-dev-server  --open",
-    "build": "npm run clean && npm run compile",
+    "build": "webpack -p",
     "clean": "rm -rf ./build/index.bundle.js",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm run build && npm start",
     "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
   },
   "engines": {

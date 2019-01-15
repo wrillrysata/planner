@@ -23,7 +23,7 @@ class Planner extends Component {
   handleDeleteOption = optionToRemove => {
     this.setState(prevState => ({
       options: prevState.options.filter(option => optionToRemove !== option)
-      //if both options are not equal, return true and keep option else
+      //if both options are not same, return true and keep option else
       // return false and delete the option
     }));
   };
