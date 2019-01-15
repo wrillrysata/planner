@@ -64,7 +64,7 @@
     "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
   },
   "engines": {
-    "node": "10.11.0"
+    "node": "8.0.0"
   },
   "jest": {
     "collectCoverageFrom": [
